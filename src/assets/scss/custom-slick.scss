@@ -1,0 +1,64 @@
+@import "colors";
+
+.slick-slide {
+    img {
+        width: 100%;
+    }
+}
+
+.slick-arrow {
+    &.slick-prev {
+        left: 24px;
+    }
+    &.slick-next {
+        right: 24px;
+    }
+    
+}
+.slick-prev::before {
+    content: url(../images/left-arrow.svg);
+}
+.slick-next::before {
+    content: url(../images/right-arrow.svg);
+}
+.slick-prev, .slick-next {
+    z-index: 1;
+    width: 48px;
+    height: 48px;
+    border: 2px solid $off-white;
+    border-radius: 50%;
+}
+.slick-prev::before, .slick-next::before {
+
+}
+.slick-slider-wrapper {
+    position: relative;
+    .slick-thumbnail-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: white;
+        margin: 0 100px;
+        border-radius: 4px 4px 0 0;
+        .slick-slide {
+            padding: 1rem .5rem;
+            .slick-slide {
+                padding: 0 0;
+                overflow: hidden;
+                img {
+                    border-radius: 4px;
+                    cursor: pointer;
+                }
+            }
+            &.slick-current {
+                border-top: 2px solid #181818;
+            }  
+        }
+        // .slick-track {
+        //     margin-left: 16px;
+        //     margin-right: 16px;
+        // }
+    }
+}
+

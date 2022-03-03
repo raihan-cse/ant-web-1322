@@ -1,0 +1,515 @@
+@import "colors";
+@import "buttons";
+
+@media (max-width: 359.98px) {}
+
+@media (min-width: 360px) and (max-width: 575.98px) {
+    .container {
+        padding-left : 32px;
+        padding-right: 32px;
+    }
+
+    .section-title-wrapper {
+        display        : flex;
+        flex-direction : column;
+        justify-content: initial;
+        align-items    : initial;
+        padding-bottom : 62px;
+
+        .sc-title-box {
+            flex     : 0 0 100%;
+            max-width: 100%;
+
+            .sc-title {
+                font-size  : 26px;
+                line-height: 32px;
+            }
+        }
+
+        .sc-view-all-box {
+            display: none;
+        }
+    }
+
+    //navbar start
+
+
+    //hero section start
+
+
+    // digital experience section start
+
+
+
+    // clients section start
+    .home-clients-section {
+        .container-fluid {
+            padding-left : 18px !important;
+            padding-right: 18px !important;
+        }
+
+        padding-bottom: 56px;
+
+        .section-title-wrapper {
+            .sc-title-box {
+                flex     : 0 0 60%;
+                max-width: 60%;
+
+                .sc-title {
+                    text-align: left;
+                }
+            }
+        }
+
+        .slide-rtl {
+            padding: 48px 0;
+        }
+    }
+
+
+    // animated count section start
+    .animated-count-section {
+        padding: 40px 0;
+
+        .count-align:nth-child(2) .counter-wrapper {
+            max-width: 70px;
+        }
+
+        .count-align:last-child .counter-wrapper {
+            max-width: 60px;
+        }
+
+        .counter-wrapper {
+            display       : flex;
+            align-items   : flex-start;
+            flex-direction: column;
+
+            .number-wrapper {
+                .number {
+                    h1 {
+                        font-size  : 26px;
+                        line-height: 32px;
+                    }
+
+                    &:not(:first-child) {
+                        padding   : 0 .5rem 0 0;
+                        margin-top: -.10rem;
+                    }
+                }
+            }
+
+            .text {
+                p {
+                    font-size  : 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+
+
+    // great together section start
+    .great-together-section {
+        padding: 72px 0;
+
+        .great-together-wrapper {
+            .content-wrapper {
+                h1 {
+                    font-size     : 24px;
+                    line-height   : 32px;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    font-size  : 12px;
+                    line-height: 24px;
+                }
+            }
+
+            .get-quote-wrapper {
+                padding-top    : 2rem;
+                justify-content: flex-start;
+
+                .get-quote-box {
+                    height     : 44px;
+                    line-height: 38px;
+                    padding    : 0 16px;
+
+                    a {
+                        span {
+                            font-size     : 11px;
+                            letter-spacing: 1.5px;
+
+                            img {
+                                width      : 15px;
+                                margin-left: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+    //terms and polices
+
+
+
+    // accordion design start
+
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .container {
+        padding-left : 32px;
+        padding-right: 32px;
+    }
+
+    .section-title-wrapper {
+        display        : flex;
+        flex-direction : column;
+        justify-content: initial;
+        align-items    : initial;
+        padding-bottom : 62px;
+
+        .sc-title-box {
+            flex     : 0 0 100%;
+            max-width: 100%;
+
+            .sc-title {
+                font-size  : 26px;
+                line-height: 32px;
+            }
+        }
+
+        .sc-view-all-box {
+            display: none;
+        }
+    }
+
+
+
+    //hero section start
+
+
+    // digital experience section start
+
+
+
+
+    // clients section start
+    .home-clients-section {
+        .container-fluid {
+            padding-left : 18px !important;
+            padding-right: 18px !important;
+        }
+
+        padding-bottom: 56px;
+
+        .section-title-wrapper {
+            .sc-title-box {
+                flex     : 0 0 60%;
+                max-width: 60%;
+
+                .sc-title {
+                    text-align: left;
+                }
+            }
+        }
+
+        .slide-rtl {
+            padding: 48px 0;
+        }
+    }
+
+
+    // animated count section start
+    .animated-count-section {
+        padding: 40px 0;
+
+        .count-align:nth-child(2) .counter-wrapper {
+            max-width: 70px;
+        }
+
+        .count-align:last-child .counter-wrapper {
+            max-width: 60px;
+        }
+
+        .counter-wrapper {
+            display       : flex;
+            align-items   : flex-start;
+            flex-direction: column;
+
+            .number-wrapper {
+                .number {
+                    h1 {
+                        font-size  : 26px;
+                        line-height: 32px;
+                    }
+
+                    &:not(:first-child) {
+                        padding   : 0 .5rem 0 0;
+                        margin-top: -.10rem;
+                    }
+                }
+            }
+
+            .text {
+                p {
+                    font-size  : 10px;
+                    line-height: 14px;
+                }
+            }
+        }
+    }
+
+
+    // great together section start
+    .great-together-section {
+        padding: 72px 0;
+
+        .great-together-wrapper {
+            .content-wrapper {
+                h1 {
+                    font-size     : 24px;
+                    line-height   : 32px;
+                    padding-bottom: 1rem;
+                }
+
+                p {
+                    font-size  : 12px;
+                    line-height: 24px;
+                }
+            }
+
+            .get-quote-wrapper {
+                padding-top    : 2rem;
+                justify-content: flex-start;
+
+                .get-quote-box {
+                    height     : 44px;
+                    line-height: 38px;
+                    padding    : 0 16px;
+
+                    a {
+                        span {
+                            font-size     : 11px;
+                            letter-spacing: 1.5px;
+
+                            img {
+                                width      : 15px;
+                                margin-left: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // footer start
+
+
+    //terms and polices
+
+
+
+    // accordion design start 
+
+
+
+    //modal design start
+
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .section-title-wrapper {
+        .sc-title-box {
+            flex-basis: 84%;
+
+            .sc-title {
+                font-size  : 52px;
+                line-height: 68px;
+            }
+        }
+    }
+
+
+    //hero section start
+
+
+
+    // digital experience section start
+
+
+
+
+    // animated count section start
+    .animated-count-section {
+        padding: 40px 0;
+
+        .count-align:first-child .counter-wrapper {
+            max-width: 112px;
+        }
+
+        .count-align:nth-child(2) .counter-wrapper {
+            max-width: 128px;
+        }
+
+        .count-align:last-child .counter-wrapper {
+            max-width: 110px;
+        }
+
+        .counter-wrapper {
+            display       : flex;
+            align-items   : flex-start;
+            flex-direction: column;
+
+            .number-wrapper {
+                .number {
+                    h1 {
+                        font-size  : 48px;
+                        line-height: 48px;
+                    }
+
+                    &:not(:first-child) {
+                        padding   : 0 .5rem 0 0;
+                        margin-top: -.15rem;
+                    }
+                }
+            }
+
+            .text {
+                p {
+                    font-size  : 18px;
+                    line-height: 24px;
+                    padding-top: 12px;
+                }
+            }
+        }
+    }
+
+
+    // great together section start
+    .great-together-section {
+        padding: 72px 0;
+
+        .great-together-wrapper {
+            .content-wrapper {
+                h1 {
+                    font-size     : 42px;
+                    line-height   : 54px;
+                    padding-bottom: 2rem;
+                }
+
+                p {
+                    font-size  : 20px;
+                    line-height: 32px;
+                    max-width  : 604px;
+                }
+            }
+
+            .get-quote-wrapper {
+                padding-top    : 2rem;
+                justify-content: flex-start;
+
+                .get-quote-box {
+                    height     : 58px;
+                    line-height: 52px;
+
+                    a {
+                        span {
+                            font-size     : 16px;
+                            letter-spacing: 1.5px;
+
+                            img {
+                                width      : 18px;
+                                margin-left: 6px;
+                                margin-top : -3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+    // footer start
+
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {}
+
+@media (min-width: 1200px) and (max-width: 1365.98px) {}
+
+@media (min-width: 1366px) and (max-width: 1679.98px) {
+    // digital experience section start
+
+
+
+    // great together section start
+    .great-together-section {
+        .great-together-wrapper {
+            .content-wrapper {
+                h1 {
+                    font-size  : 48px;
+                    line-height: 58px;
+                }
+
+                p {
+                    font-size: 22px;
+                    max-width: 552px;
+                }
+            }
+
+            .get-quote-wrapper {
+                .get-quote-box {
+                    a {
+                        span {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1680px) and (max-width: 1919.98px) {}
+
+@media (min-width: 1920px) {
+    .container {
+        max-width: 100%;
+        padding  : 0 248px;
+    }
+
+
+
+
+    // clients section start 
+    .home-clients-section {
+        .section-title-wrapper {
+            .sc-title-box {
+                flex-basis: 100%;
+            }
+        }
+    }
+
+
+    // great together section start
+    .great-together-section {
+        .great-together-wrapper {
+            .content-wrapper {
+                p {
+                    max-width: 732px;
+                }
+            }
+        }
+    }
+
+}
