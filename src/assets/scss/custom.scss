@@ -118,7 +118,9 @@ ol, ul, dl {
 
 // clients section start
 .home-clients-section {
+    padding-top: 100px;
     padding-bottom: 100px;
+    background-color: $white;
     .section-title-wrapper {
         .sc-title-box {
             // flex-basis: 70%;

@@ -5,129 +5,17 @@
     height    : 100vh;
     overflow  : hidden;
     background: $white;
-    position  : relative;
 
     position: sticky;
     top     : 0;
     z-index : -1;
 
-    &::before {
-        content   : '';
-        position  : absolute;
-        top       : 0;
-        left      : 0;
-        right     : 0;
-        bottom    : 0;
-        height    : 0;
-        transition: height .7s ease-in-out;
-        background: $black;
-        z-index   : -1;
-    }
-
     .hero_white_inner {
         height         : 100%;
         display        : flex;
-        flex-direction : column;
+        flex-direction: column;
         justify-content: center;
         align-items    : center;
-        position       : relative;
-
-        .image_wrapper {
-            position: relative;
-
-            img {
-                width     : 47.5vh;
-                height    : 61.66666666vh;
-                transition: all .7s ease-in-out;
-            }
-
-            .light_image {
-                position: absolute;
-                top     : 0;
-                left    : 0;
-                opacity : 0;
-            }
-        }
-
-        h1 {
-            font-family   : 'Syntha';
-            font-size     : 5.18518518vh;
-            line-height   : 3.98148148vh;
-            letter-spacing: 0.1em;
-            font-style    : normal;
-            font-weight   : normal;
-            color         : $white;
-            transition    : all .7s ease-in-out;
-
-            margin-top   : 2.31481481vh;
-            margin-bottom: 0.92592592vh;
-
-            position  : absolute;
-            bottom    : 6.94444444vh;
-            opacity   : 0;
-            visibility: hidden;
-        }
-
-        h2 {
-            font-family   : 'Syntha';
-            font-weight   : 300;
-            font-size     : 3.70370370vh;
-            line-height   : 4.35185185vh;
-            letter-spacing: 0.1em;
-            color         : $white;
-            transition    : all .7s ease-in-out;
-
-            position  : absolute;
-            bottom    : 9.25925925vh;
-            opacity   : 0;
-            visibility: hidden;
-        }
-
-        &.zoomOut {
-            .image_wrapper {
-                img {
-                    margin-top: -12vh;
-                    width     : 13.24074074vh;
-                    height    : 17.12962962vh;
-                }
-            }
-
-            h1 {
-                bottom    : 40vh;
-                opacity   : 1;
-                visibility: visible;
-            }
-        }
-
-        &.color {
-            h1 {
-                color: #242424;
-            }
-
-            h2 {
-                bottom    : 34vh;
-                opacity   : 1;
-                visibility: visible;
-            }
-        }
-    }
-
-    &.black {
-        &::before {
-            height: 100%;
-        }
-
-        .hero_white_inner {
-            .image_wrapper {
-                .light_image {
-                    opacity: 1;
-                }
-
-                .black_image {
-                    opacity: 0;
-                }
-            }
-        }
     }
 }
 
@@ -156,25 +44,30 @@
         }
 
         h1 {
-            font-family   : 'Syntha';
-            font-size     : 5.18518518vh;
-            line-height   : 3.98148148vh;
-            letter-spacing: 0.1em;
-            font-style    : normal;
-            font-weight   : normal;
-            color         : $white;
+            font-family      : 'Syntha';
+            font-size        : 56px;
+            line-height      : 43px;
+            letter-spacing   : 0.1em;
+            font-style       : normal;
+            font-weight      : normal;
+            color            : $white;
 
-            margin-top   : 2.31481481vh;
-            margin-bottom: 0.92592592vh;
+            margin-top   : 25px;
+            margin-bottom: 10px;
         }
 
         h2 {
-            font-family   : 'Syntha';
-            font-weight   : 300;
-            font-size     : 3.70370370vh;
-            line-height   : 4.35185185vh;
-            letter-spacing: 0.1em;
-            color         : $white;
+            font-family      : 'Syntha';
+            font-weight      : 300;
+            font-size        : 40px;
+            line-height      : 47px;
+            letter-spacing   : 0.1em;
+            color: $white;
+            // transition: all .5s ease-in-out;
+
+            transform: translateY(120px);
+            opacity: 0;
+            visibility: hidden;
         }
     }
 }
@@ -183,10 +76,6 @@
 .empty_section {
     height: 30vh;
     width : 100%;
-
-    &.one {
-        height: 40vh;
-    }
 }
 
 
@@ -202,19 +91,15 @@
     }
 
     .custom_container {
-        // max-width: 87.70833333vw;
-        max-width: 87.70833333%;
+        max-width: 87.70833333vw;
         width    : 100%;
         margin   : 0 auto;
 
-
-        // >div {
-        //     height         : 100%;
-        //     display        : flex;
-        //     flex-direction : column;
-        //     align-items    : flex-start;
-        //     justify-content: space-between;
-        // }
+        height         : 100%;
+        display        : flex;
+        flex-direction : column;
+        align-items    : flex-start;
+        justify-content: space-between;
 
         .logo_wrapper {
             margin-bottom: 12.96296296vh;
@@ -240,24 +125,21 @@
                     padding-bottom: 2.22222222vh;
                 }
 
-                .title_slide_wrapper {
+                h2 {
+                    font-weight      : 300;
+                    // font-size     : 5.18518518vh; //56px
+                    font-size        : 4.35185185vh; //47px
+                    line-height      : 6.11111111vh;
+                    letter-spacing   : 0.1em;
+                    text-transform   : uppercase;
+                    color            : $white;
                     transform        : translateY(-30.87037037vh);
-                    transition       : transform 0.5s ease-in-out; 
-                    h2 {
-                        font-weight      : 300;
-                        // font-size     : 5.18518518vh; //56px
-                        font-size        : 4.35185185vh; //47px
-                        line-height      : 6.11111111vh;
-                        letter-spacing   : 0.1em;
-                        text-transform   : uppercase;
-                        color            : $white;                       
-                    }
+                    transition       : transform 0.5s ease-in-out;
+
                     &.show {
                         transform: translateY(0);
                     }
-
                 }
-                
 
                 >.submit_btn {
                     position  : absolute;
@@ -366,10 +248,8 @@
                 text-align: right;
 
                 img {
-                    width    : 55.55555555vh;
-                    height   : 55.55555555vh;
-                    // width : 600px;
-                    // height: 600px;
+                    width : 55.55555555vh;
+                    height: 55.55555555vh;
                 }
             }
         }

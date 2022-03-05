@@ -4,7 +4,6 @@
 
 // protfolio or tab content section start
 .protfolio-section {
-    padding-bottom: 100px;
     position: relative;
     .fade {
         transition: opacity 1.5s ease-in-out;
@@ -54,6 +53,7 @@
         display: flex;
         flex-wrap: wrap;
         height: 100vh;
+        background-color: $white;
         .profile-content-inner {
             &.first-box {
                 flex: 0 0 3.9%;
